@@ -1,6 +1,6 @@
 {
   "name": "flatit",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Faltten array",
   "main": "index.js",
   "scripts": {
