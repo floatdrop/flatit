@@ -30,7 +30,7 @@ Returns flattened array.
        2,585,484 op/s » flatit
        2,219,920 op/s » lodash
 
-                      flatten signle nested array
+                      flatten single nested array
       46,959,060 op/s » flatit
        1,658,276 op/s » lodash
 

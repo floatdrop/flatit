@@ -24,7 +24,7 @@ suite('flatten already flat array', function () {
     run(array);
 });
 
-suite('flatten signle nested array', function () {
+suite('flatten single nested array', function () {
     var array = [[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]];
 
     run(array);
