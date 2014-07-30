@@ -1,0 +1,29 @@
+{
+  "name": "flatit",
+  "version": "0.0.0",
+  "description": "Faltten array",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:floatdrop/flatit.git"
+  },
+  "keywords": [
+    "Flatten",
+    "array"
+  ],
+  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatdrop/flatit/issues"
+  },
+  "homepage": "https://github.com/floatdrop/flatit",
+  "devDependencies": {
+    "lodash": "^2.4.1",
+    "matcha": "^0.5.0",
+    "mocha": "^1.21.3",
+    "should": "^4.0.4"
+  }
+}
