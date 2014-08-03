@@ -23,20 +23,24 @@ Returns flattened array.
 
 ```
                       flatten empty array
-      75,483,682 op/s » flatit
-      30,172,787 op/s » lodash
+      79,013,663 op/s » flatit
+      30,549,899 op/s » lodash
+
+                      flatten array of empty arrays
+       2,909,323 op/s » flatit
+         565,505 op/s » lodash
 
                       flatten already flat array
-       2,585,484 op/s » flatit
-       2,219,920 op/s » lodash
+       2,407,857 op/s » flatit
+       2,544,221 op/s » lodash
 
                       flatten single nested array
-      46,959,060 op/s » flatit
-       1,658,276 op/s » lodash
+      42,301,213 op/s » flatit
+       1,291,195 op/s » lodash
 
                       flatten nested array
-         953,203 op/s » flatit
-         541,397 op/s » lodash
+         826,186 op/s » flatit
+         560,056 op/s » lodash
 ```
 
 # License

@@ -20,14 +20,16 @@ module.exports = function flatten(array) {
     while (++index < length) {
         var value = array[index];
         if (Array.isArray(value)) {
-            value = flatten(value);
+            if (value.length > 0) {
+                value = flatten(value);
 
-            var valIndex = -1,
-                valLength = value.length;
+                var valIndex = -1,
+                    valLength = value.length;
 
-            result.length += valLength;
-            while (++valIndex < valLength) {
-                result[resIndex++] = value[valIndex];
+                result.length += valLength;
+                while (++valIndex < valLength) {
+                    result[resIndex++] = value[valIndex];
+                }
             }
         } else {
             result[resIndex++] = value;
