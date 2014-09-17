@@ -4,7 +4,8 @@
   "description": "Faltten array",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "bench": "matcha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/floatdrop/flatit",
   "devDependencies": {
+    "flatten": "0.0.1",
     "lodash": "^2.4.1",
     "matcha": "^0.5.0",
     "mocha": "^1.21.3",

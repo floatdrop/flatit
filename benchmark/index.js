@@ -1,14 +1,20 @@
 /* global suite, bench */
 
 var flatit = require('..');
+var flatten = require('flatten');
 var lodash = require('lodash');
 
 function run(array) {
     bench('flatit', function () {
         return flatit(array);
     });
+
     bench('lodash', function () {
         return lodash.flatten(array);
+    });
+
+    bench('flatten', function () {
+        return flatten(array);
     });
 }
 
