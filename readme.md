@@ -24,30 +24,35 @@ Returns flattened array.
 Run `npm run bench` to test it yourself.
 
 ```
-                     flatten empty array
-     133,861,031 op/s » flatit
-      43,560,353 op/s » lodash
-         400,768 op/s » flatten
+                      flatten empty array
+     141,433,792 op/s » flatit
+      45,311,075 op/s » lodash
+         415,161 op/s » flatten
 
                       flatten array of empty arrays
-       1,914,315 op/s » flatit
-         436,306 op/s » lodash
-          99,419 op/s » flatten
+       3,011,512 op/s » flatit
+         447,007 op/s » lodash
+          97,515 op/s » flatten
 
                       flatten already flat array
-       3,545,274 op/s » flatit
-       2,450,495 op/s » lodash
-          22,698 op/s » flatten
+       3,675,987 op/s » flatit
+       2,498,742 op/s » lodash
+          23,792 op/s » flatten
 
                       flatten single nested array
-      51,684,086 op/s » flatit
-       1,459,701 op/s » lodash
-          22,110 op/s » flatten
+      53,866,643 op/s » flatit
+       1,482,026 op/s » lodash
+          24,002 op/s » flatten
 
                       flatten nested array
-         740,536 op/s » flatit
-         435,556 op/s » lodash
-          25,547 op/s » flatten
+         735,483 op/s » flatit
+         429,010 op/s » lodash
+          26,407 op/s » flatten
+
+                      flatten big array (depth 2)
+           4,709 op/s » flatit
+           4,422 op/s » lodash
+              51 op/s » flatten
 ```
 
 # License
