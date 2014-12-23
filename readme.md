@@ -25,34 +25,40 @@ Run `npm run bench` to test it yourself.
 
 ```
                       flatten empty array
-     141,433,792 op/s » flatit
-      45,311,075 op/s » lodash
-         415,161 op/s » flatten
+      78,780,394 op/s » flatit
+      30,164,656 op/s » lodash
+       2,821,689 op/s » flatten
+      28,886,468 op/s » recursive
 
                       flatten array of empty arrays
-       3,011,512 op/s » flatit
-         447,007 op/s » lodash
-          97,515 op/s » flatten
+       3,012,375 op/s » flatit
+         588,371 op/s » lodash
+         129,737 op/s » flatten
+       2,235,853 op/s » recursive
 
                       flatten already flat array
-       3,675,987 op/s » flatit
-       2,498,742 op/s » lodash
-          23,792 op/s » flatten
+       2,495,726 op/s » flatit
+       2,475,523 op/s » lodash
+          29,953 op/s » flatten
+       1,092,921 op/s » recursive
 
                       flatten single nested array
-      53,866,643 op/s » flatit
-       1,482,026 op/s » lodash
-          24,002 op/s » flatten
+      42,479,196 op/s » flatit
+       1,226,766 op/s » lodash
+          29,801 op/s » flatten
+       1,075,470 op/s » recursive
 
                       flatten nested array
-         735,483 op/s » flatit
-         429,010 op/s » lodash
-          26,407 op/s » flatten
+         838,385 op/s » flatit
+         552,424 op/s » lodash
+          31,275 op/s » flatten
+       1,521,271 op/s » recursive
 
                       flatten big array (depth 2)
-           4,709 op/s » flatit
-           4,422 op/s » lodash
-              51 op/s » flatten
+           4,191 op/s » flatit
+           3,728 op/s » lodash
+              57 op/s » flatten
+           6,949 op/s » recursive
 ```
 
 # License

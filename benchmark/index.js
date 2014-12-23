@@ -16,6 +16,25 @@ function run(array) {
     bench('flatten', function () {
         return flatten(array);
     });
+
+    function flat(arr) {
+        var result = [];
+        function rec (arr) {
+            for (var i = 0; i < arr.length; i++){
+                if (Array.isArray(arr[i])) {
+                    rec(arr[i]);
+                } else {
+                    result.push(arr[i]);
+                }
+            }
+        }
+        rec(arr);
+        return result;
+    }
+
+    bench('recursive', function () {
+        return flat(array);
+    });
 }
 
 suite('flatten empty array', function () {
