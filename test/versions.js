@@ -29,5 +29,20 @@ module.exports = {
         }
 
         return result;
+    },
+    pop: function parse(arr) {
+        arr = arr.reverse();
+        var result = [];
+
+        while (arr.length) {
+            var el = arr.pop();
+            if (Array.isArray(el)) {
+                arr.push.apply(arr, el.reverse());
+            } else {
+                result.push(el);
+            }
+        }
+
+        return result;
     }
 };
