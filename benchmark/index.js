@@ -17,6 +17,21 @@ function run(array) {
         return flatten(array);
     });
 
+    function shifting(arr) {
+        var result = [];
+
+        while (arr.length) {
+            var el = arr.shift();
+            if (Array.isArray(el)) {
+                arr = el.concat(arr);
+            } else {
+                result.push(el);
+            }
+        }
+
+        return result;
+    }
+
     function flat(arr) {
         var result = [];
         function rec (arr) {
@@ -34,6 +49,10 @@ function run(array) {
 
     bench('recursive', function () {
         return flat(array);
+    });
+
+    bench('shifting', function () {
+        return shifting(array);
     });
 }
 
