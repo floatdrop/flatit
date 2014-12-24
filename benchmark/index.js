@@ -3,26 +3,11 @@
 var versions = require('../test/versions.js');
 
 function run(array) {
-    bench('flatit', function () {
-        return flatit(array);
-    });
-
-    bench('lodash', function () {
-        return lodash.flatten(array);
-    });
-
-    bench('flatten', function () {
-        return flatten(array);
-    });
-
-
-
-    bench('recursive', function () {
-        return flat(array);
-    });
-
-    bench('shifting', function () {
-        return shifting(array);
+    Object.keys(versions).forEach(function (implementation) {
+        var flatten = versions[implementation];
+        bench(implementation, function () {
+            return flatten(array);
+        });
     });
 }
 
@@ -30,7 +15,6 @@ suite('flatten empty array', function () {
     var array = [];
     run(array);
 });
-
 
 suite('flatten array of empty arrays', function () {
     var array = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];

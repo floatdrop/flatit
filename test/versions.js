@@ -13,7 +13,7 @@ module.exports = {
         rec(arr);
         return result;
     },
-    lodash: require('lodash'),
+    lodash: require('lodash').flatten,
     flatten: require('flatten'),
     flatit: require('..'),
     shifting: function shifting(arr) {

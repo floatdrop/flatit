@@ -6,7 +6,7 @@ require('should');
 
 var bigAnswer = require('./bigAnswer.json');
 
-for (var implementation in versions) {
+Object.keys(versions).forEach(function (implementation) {
     var flatten = versions[implementation];
     describe(implementation, function () {
         it('should skip empty arrays', function () {
@@ -36,7 +36,7 @@ for (var implementation in versions) {
         it('should flatten array with empty arrays inside', function () {
             flatten([1,[],5]).should.eql([1,5]);
         });
-
+        
         var bigQuestion = [];
         for (var i=0; i<100; ++i) {
             bigQuestion.push([]);
@@ -49,4 +49,4 @@ for (var implementation in versions) {
             flatten(bigQuestion).should.eql(bigAnswer);
         });
     });
-}
+});
