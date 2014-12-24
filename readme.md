@@ -24,52 +24,52 @@ Returns flattened array.
 Run `npm run bench` to test it yourself.
 
 ```
-                      flatten empty array
-      77,004,991 op/s » flatit
-      29,516,552 op/s » lodash
-       2,854,918 op/s » flatten
-      27,666,675 op/s » recursive
-      78,193,067 op/s » shifting
+                     flatten empty array
+      10,523,347 op/s » recursive
+      10,818,348 op/s » lodash
+       1,898,125 op/s » flatten
+      14,539,009 op/s » flatit
+      14,306,085 op/s » shifting
 
                       flatten array of empty arrays
-       2,949,511 op/s » flatit
-         589,829 op/s » lodash
-         126,015 op/s » flatten
-       2,196,373 op/s » recursive
-      71,027,283 op/s » shifting
+       1,691,271 op/s » recursive
+         530,756 op/s » lodash
+          81,688 op/s » flatten
+       2,197,596 op/s » flatit
+         289,523 op/s » shifting
 
                       flatten already flat array
-       2,444,153 op/s » flatit
-       2,550,608 op/s » lodash
-          26,801 op/s » flatten
-       1,106,839 op/s » recursive
-      68,781,138 op/s » shifting
+         962,584 op/s » recursive
+       1,965,305 op/s » lodash
+          25,468 op/s » flatten
+       2,019,313 op/s » flatit
+         609,103 op/s » shifting
 
                       flatten single nested array
-      42,072,911 op/s » flatit
-       1,260,512 op/s » lodash
-          24,801 op/s » flatten
-       1,062,021 op/s » recursive
-      66,500,493 op/s » shifting
+         954,896 op/s » recursive
+       1,076,957 op/s » lodash
+          21,001 op/s » flatten
+       9,428,493 op/s » flatit
+         482,602 op/s » shifting
 
                       flatten nested array
-         825,166 op/s » flatit
-         548,787 op/s » lodash
-          29,171 op/s » flatten
-       1,523,168 op/s » recursive
-      71,037,735 op/s » shifting
+       1,252,168 op/s » recursive
+         490,876 op/s » lodash
+          23,867 op/s » flatten
+         703,190 op/s » flatit
+         304,862 op/s » shifting
 
                       flatten big array (depth 2)
-           4,218 op/s » flatit
-           3,860 op/s » lodash
-              61 op/s » flatten
-           6,943 op/s » recursive
-      64,904,537 op/s » shifting
+           5,811 op/s » recursive
+           3,293 op/s » lodash
+              48 op/s » flatten
+           3,753 op/s » flatit
+           1,554 op/s » shifting
 
 
   Suites:  6
   Benches: 30
-  Elapsed: 50,804.43 ms
+  Elapsed: 48,250.26 ms
 ```
 
 # License

@@ -22,7 +22,7 @@ module.exports = {
         while (arr.length) {
             var el = arr.shift();
             if (Array.isArray(el)) {
-                arr = el.concat(arr);
+                arr.unshift.apply(arr, el);
             } else {
                 result.push(el);
             }

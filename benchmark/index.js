@@ -6,7 +6,7 @@ function run(array) {
     Object.keys(versions).forEach(function (implementation) {
         var flatten = versions[implementation];
         bench(implementation, function () {
-            return flatten(array);
+            return flatten(array.slice(0));
         });
     });
 }
@@ -36,14 +36,14 @@ suite('flatten nested array', function () {
     run(array);
 });
 
-var data = [];
-for (var i=0; i<100; ++i) {
-    data.push([]);
-    for (var j=0; j<100; ++j) {
-        data[i].push(j);
-    }
-}
-
 suite('flatten big array (depth 2)', function () {
+    var data = [];
+    for (var i=0; i<100; ++i) {
+        data.push([]);
+        for (var j=0; j<100; ++j) {
+            data[i].push(j);
+        }
+    }
+
     run(data);
 });
