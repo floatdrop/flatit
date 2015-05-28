@@ -1,4 +1,4 @@
-# flatit [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
+# flatit [![Build Status][travis-image]][travis-url]
 
 Another implementation of array flatterization. Works recursivly down every nested array.
 
