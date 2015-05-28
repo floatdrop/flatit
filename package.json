@@ -15,6 +15,9 @@
     "Flatten",
     "array"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
   "license": "MIT",
   "bugs": {
