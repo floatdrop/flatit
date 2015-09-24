@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/floatdrop/flatit",
   "devDependencies": {
+    "arr-flatten": "^1.0.1",
     "flatten": "0.0.1",
     "lodash": "^2.4.1",
     "matcha": "^0.5.0",

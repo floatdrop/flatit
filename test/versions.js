@@ -13,6 +13,7 @@ module.exports = {
         rec(arr);
         return result;
     },
+    arrFlatten: require('arr-flatten'),
     lodash: require('lodash').flatten,
     flatten: require('flatten'),
     flatit: require('..'),
